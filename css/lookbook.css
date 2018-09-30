@@ -1,0 +1,184 @@
+#main_lookbook{
+	background: url(../images/background-beans-black-coffee-867470.jpg);
+	padding-top: 120px;
+	min-width: 960px;
+	overflow: hidden;
+	background-size: cover;
+	background-position:center;
+
+
+}
+#main_lookbook img{
+width: 100%;	
+height: 100%;	
+
+}
+#main_lookbook:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+}
+.main_lookbook_text h3, .main_lookbook_text p{
+	text-align: center;
+	color: white;
+	z-index: 2;
+}
+.main_lookbook_text p{
+	text-align: center;
+	padding-bottom: 70px;
+	color: white;
+
+}
+.look_box {
+	padding-top: 16px;
+}
+.look_box .container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* width: 1000px; */
+	margin: 0 auto;
+	justify-content: center;
+	margin-bottom: 48px;
+	text-align: center;
+	/* position: relative; */
+
+}
+.box{
+	width: 300px;
+	height: 300px;
+	/*border: 1px solid black;*/
+	margin: 15px;
+	justify-content: center;
+	background-color: gray;
+	object-fit: cover;
+	overflow: hidden;
+	
+
+}
+
+.box img{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+
+	object-fit: cover;
+	overflow: hidden;
+	display: block;
+
+
+}
+.box img:hover{
+
+	opacity: 0.6;
+
+}
+
+@media (max-width: 320px){
+
+	#main_lookbook{
+
+	
+	padding-top: 120px;
+	min-width: 280px;
+	overflow: hidden;
+	
+	}
+	.main_lookbook_text h3, .main_lookbook_text p{
+		text-align: center;
+	}
+	.main_lookbook_text p{
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	.look_box .container{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		/* width: 100%; */
+		margin-bottom: 48px;
+	}
+	.box{
+		width: 90%;
+		height: 90%;
+
+		margin: 15px;
+		justify-content: center;
+		align-items: center;
+		background-color: gray;
+		object-fit: cover;
+		overflow: hidden;
+	
+	
+	}
+	.box img{
+		width: 100%;
+		height: 100%;
+		justify-content: center;	
+		object-fit: cover;
+		overflow: hidden;
+		
+	
+	}
+
+}
+@media (min-width: 321px) and (max-width: 769px){
+	#main_lookbook{
+	min-width: 720px;
+	padding-top: 120px;
+	overflow: hidden;
+
+}
+.main_lookbook_text h3, .main_lookbook_text p{
+	text-align: center;
+}
+.main_lookbook_text p{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.look_box .container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* width: 1000px; */
+	margin: 0 auto;
+	justify-content: center;
+	margin-bottom: 48px;
+	text-align: center;
+	/* position: relative; */
+
+}
+.box{
+	width: 200px;
+	height: 200px;
+	/*border: 1px solid black;*/
+	margin: 15px;
+	justify-content: center;
+	background-color: gray;
+	object-fit: cover;
+	overflow: hidden;
+	
+
+}
+
+.box img{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+
+	object-fit: cover;
+	overflow: hidden;
+	display: block;
+
+
+}
+
+}

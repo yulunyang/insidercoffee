@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insinger 硬性格</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="icon" href="images/if_Morning_Coffee_2_753121.ico" type="image/x-icon" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cedarville+Cursive" rel="stylesheet">
+	<style>
+
+	#main_menu{
+	background: url(images/caffeine-coffee-cup-641038.jpg) no-repeat;
+    background-position:center;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+
+
+}
+.main_menu_text{
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+}
+.main_menu_text h3, .main_menu_text p{
+	text-align: right;
+	color: white;
+	z-index: 2;
+}
+.main_menu_text p{
+	text-align: right;
+	/*padding-bottom: 70px;*/
+	color: white;
+
+}
+.fa-angle-menu{
+	color: white;
+	position: absolute;
+	right: 60px;
+	bottom: 70px;
+	font-size: 28px;
+	animation: mymovemove 1.5s infinite;
+}
+
+/*@keyframes mymovemove {
+    0%   {bottom: 90px;}
+    100% {bottom: 70px;
+    	opacity: 0;}}
+}*/
+	.main_menu_checkbox{
+		background-color: white;
+		padding: 24px 0;
+		top: 700px;
+		
+		font-family: 'Amatic SC', cursive, '標楷體';
+		
+		font-size: 3em;
+		font-weight: 500;
+
+	}
+	.main_menu_checkbox .container{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.forhere_icon{
+		margin-right: 16px;
+		font-size: 30px;
+		cursor: pointer;
+		color: #333333;
+		border-bottom: 3px solid #333333;
+		/*box-shadow: 0px 2px 0px #333333;*/
+	}
+	.forhere_icon label{
+		cursor: pointer;
+	}
+	.togo_icon{
+		margin-right: 16px;
+		font-size: 30px;
+		cursor: pointer;
+		color: #333333;
+	}
+		.togo_icon label{
+		cursor: pointer;
+	}
+
+
+	.main_menu_forhere{
+		top: 700px;
+		background: white;
+		/*margin-bottom: 600px;*/
+		padding-bottom:100px;
+		
+
+	}
+	.main_menu_forhere img{
+		width: 100px;
+	}
+
+	.main_menu_togo {
+		top: 700px;
+		background: white;
+		/*margin-bottom: 600px;*/
+		padding-bottom:100px;
+		display: none;
+		
+
+	}
+	.main_menu_togo  img{
+		width: 100px;
+	}
+	.forhere_img{
+	background: url(images/aerial-beverage-caffeine-972533.jpg) no-repeat;
+    background-position:center;
+
+ 
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    margin-bottom: 28px;
+	}
+	.forhere_img img{
+	width: 100%;
+	}
+	.forhere_img2{
+	background: url(images/beans-caffeine-coffee-5464.jpg) no-repeat;
+    background-position:center;
+
+ 
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    margin-bottom: 28px;
+	}
+	.forhere_img2 img{
+
+	object-fit: cover;
+	}
+
+	.main_menu_forhere .container .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+	}
+	.main_menu_forhere .container .row .col{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 5;
+	margin-bottom: 16px;
+	margin-right: 36px;
+	font-family: 'Amatic SC', cursive, '微軟正黑體';
+	justify-content: space-between;
+
+	}
+	.main_menu_togo .container .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+	}
+	.main_menu_togo .container .row .col{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 5;
+	margin-bottom: 16px;
+	margin-right: 36px;
+	font-family: 'Amatic SC', cursive, '微軟正黑體';
+	justify-content: space-between;
+
+	}
+	.menu_img{margin-right: 16px;}
+	.menu_title{
+		font-size: 1.5em;
+		flex: 3;
+		letter-spacing: 2px;
+		font-weight: 500;
+
+	}
+
+	
+	.menu_price{
+		font-size: 1.5em;
+	letter-spacing: 2px;
+	font-weight: 500;
+		
+	}
+	.togglemenu{
+		display: none;
+	}
+	footer{
+		top: 700px;
+		display: block;
+	}
+
+
+
+
+
+
+
+	@media (max-width: 321px){
+	#main_menu{
+	background: url(images/caffeine-coffee-cup-641038.jpg) no-repeat;
+    background-position:center -400px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%; */
+    background-size: cover;
+
+
+}
+
+	.main_menu_checkbox{
+		background-color: white;
+		padding: 16px 0;
+		top: 320px;
+		/*font-family: Arial, Helvetica, '微軟正黑體';*/
+		font-family: 'Amatic SC', cursive, '標楷體';
+		
+		font-size: 1em;
+
+	}
+	.main_menu_checkbox .container{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.forhere_icon{
+		margin-right: 16px;
+		font-size: 24px;
+	}
+	.togo_icon{
+		margin-right: 16px;
+		font-size: 24px;
+	}
+	
+
+
+	.main_menu_forhere{
+		top: 320px;
+		background: white;
+		margin-bottom: 0;
+		padding-bottom:50px;
+		
+
+	}
+	.main_menu_forhere img{
+		width: 50px;
+	}
+
+	.main_menu_togo {
+		top: 320px;
+		background: white;
+		/*margin-bottom: 600px;*/
+		padding-bottom:50px;
+		
+
+	}
+	.main_menu_togo  img{
+		width: 60px;
+	}
+	.forhere_img{
+	background: url(images/aerial-beverage-caffeine-972533.jpg) no-repeat;
+    background-position:center center;
+
+ 
+    width: 100%;
+    height: 150px; 
+    background-size: cover;
+    margin-bottom: 28px;
+	}
+	.forhere_img img{
+	width: 100%;
+	}
+	.forhere_img2{
+	background: url(images/beans-brewing-caffeine-1161464.jpg) no-repeat;
+    background-position:center center;
+
+ 
+    width: 100%;
+    height: 150px; 
+    background-size: cover;
+    margin-bottom: 28px;
+	}
+	.forhere_img2 img{
+
+	object-fit: cover;
+	}
+
+	.main_menu_forhere .container .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+	}
+	.main_menu_forhere .container .row .col{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 5;
+	margin-bottom: 12px;
+	margin-right: 0;
+	font-family: 'Amatic SC', cursive, '微軟正黑體';
+	justify-content: space-between;
+
+	}
+	.main_menu_togo .container .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+	}
+	.main_menu_togo .container .row .col{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 5;
+	margin-bottom: 16px;
+	margin-right: 0;
+	font-family: 'Amatic SC', cursive, '微軟正黑體';
+	justify-content: space-between;
+
+	}
+	.menu_img{
+
+		margin-right: 16px;}
+
+	.menu_title{
+		font-size: 1.1em;
+		flex: 3;
+	}
+
+	
+	.menu_price{
+		font-size: 1.2em;
+	
+		
+	}
+	.togglemenu{
+		display: none;
+	}
+	footer{
+		top: 300px;
+		display: block;
+	}
+	}
+
+
+
+
+	@media (min-width: 321px) and (max-width: 769px){
+			#main_menu{
+	background: url(images/caffeine-coffee-cup-641038.jpg) no-repeat;
+    background-position:center;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+
+
+}
+
+	.main_menu_checkbox{
+		background-color: white;
+		padding: 24px 0;
+		top: 700px;
+		/*font-family: Arial, Helvetica, '微軟正黑體';*/
+		font-family: 'Amatic SC', cursive, '標楷體';
+		
+		font-size: 3em;
+
+	}
+	.main_menu_checkbox .container{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.forhere_icon{
+		margin-right: 16px;
+		font-size: 30px;
+	}
+	.togo_icon{
+		margin-right: 16px;
+		font-size: 30px;
+	}
+	
+
+
+	.main_menu_forhere{
+		top: 700px;
+		background: white;
+		/*margin-bottom: 600px;*/
+		padding-bottom:100px;
+		
+
+	}
+	.main_menu_forhere img{
+		width: 80px;
+	}
+
+	.main_menu_togo {
+		top: 700px;
+		background: white;
+		/*margin-bottom: 600px;*/
+		padding-bottom:100px;
+		
+
+	}
+	.main_menu_togo  img{
+		width: 80px;
+	}
+	.forhere_img{
+	background: url(images/aerial-beverage-caffeine-972533.jpg) no-repeat;
+    background-position:center;
+
+ 
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    margin-bottom: 28px;
+	}
+	.forhere_img img{
+	width: 100%;
+	}
+	.forhere_img2{
+	background: url(images/beans-brewing-caffeine-1161464.jpg) no-repeat;
+    background-position:center;
+
+ 
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    margin-bottom: 28px;
+	}
+	.forhere_img2 img{
+
+	object-fit: cover;
+	}
+
+	.main_menu_forhere .container .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+	}
+	.main_menu_forhere .container .row .col{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 5;
+	margin-bottom: 16px;
+	margin-right: 8px;
+	font-family: 'Amatic SC', cursive, '微軟正黑體';
+	justify-content: space-between;
+
+	}
+	.main_menu_togo .container .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+	}
+	.main_menu_togo .container .row .col{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 5;
+	margin-bottom: 16px;
+	margin-right: 8px;
+	font-family: 'Amatic SC', cursive, '微軟正黑體';
+	justify-content: space-between;
+
+	}
+	.menu_img{margin-right: 16px;}
+	.menu_title{
+		font-size: 1.2em;
+		flex: 3;
+		/* margin-right: 100px; */
+
+	}
+
+	
+	.menu_price{
+		font-size: 1.2em;
+	
+		
+	}
+	.togglemenu{
+		display: none;
+	}
+	footer{
+		top: 700px;
+		display: block;
+	}
+	}
+	</style>
+
+
+
+</head>
+<body>
+<button id="topBtn" class="topBtn" title="Go to top">Top</button>
+
+
+<div class="header_slider_menu" id="header_slider_menu">
+	<ul>
+		<li class="header_slider_li"><a href="index.html">About</a></li>
+		<li class="header_slider_li"><a href="service.html">Service</a></li>
+		<li class="header_slider_li"><a href="goods.html">Goods</a>
+			<ul class="header_slider_li_drop">
+				<li><a href="goods.html">Shop</a></li>
+				<li><a href="menu.html">Menu</a></li>
+			</ul>
+		
+		
+		</li>
+
+		<li class="header_slider_li"><a href="lookBook.html">Look</a></li>
+	
+</ul>
+	
+
+		</div>
+
+			
+	<header id="header">
+		<div class="container">
+			<a href="index.html"><img class="head_logo"src="images/2121logo.png" alt=""></a>
+				
+			<div class="head_menu">
+				<ul>
+					<li class="head_menu_li"><a href="index.html">About</a></li>
+					<li class="head_menu_li"><a href="service.html">Service</a></li>
+					<li class="head_menu_li goods_li"><a >Goods</a>
+						<ul class="dropdown">
+							<li><a href="goods.html">Shop</a></li>
+							<li class="current"><a href="menu - test.html">Menu</a></li>
+		
+						</ul></li>
+					<li class="head_menu_li"><a href="lookBook.html">#Look</a></li>
+				
+
+
+					<li class="head_menu_social"><a href="https://www.facebook.com/insingerkaffee/">
+						<i class="fab fa-facebook-square"></i></a></li>
+					<li  class="head_menu_social"><a href="https://www.instagram.com/insingerkaffee/">	  <i class="fab fa-instagram"></i></a></li>
+
+
+
+					<a href="#menu" id="toggle"><span></span></a>
+				</ul>
+
+						
+			</div>
+	
+			</div>
+
+
+
+
+	</header>
+<main>
+	<div id="main_menu" class="main_menu data-stellar-background-ratio="0.5"">
+	<div class="main_menu_text">
+			<h3 class="wow bounceInUp" >Insingerkaffee Menu</h3>
+	<p  class="wow bounceInUp" data-wow-delay="0.5s">品嘗一杯好咖啡<br>
+	或是一杯有機高山茶<br>
+
+	感受大自然的心靈悸動<br>
+
+			</div>
+			<div class="fa-angle-menu"><a id="fa-angle-menu"><i class="fas fa-angle-down"></i></a></div>
+		</div>
+<!-- end_bg -->
+<!-- start checkbox -->
+<div class="main_menu_checkbox">
+	<div class="container">
+	<div class="forhere_icon ">
+		<i class="fas fa-coffee"></i>
+	<label for="">FOR HERE</label></div>
+		
+	<div class="togo_icon">
+			<i class="fas fa-shopping-bag"></i>
+		<label for="">TO GO</label></div></div></div>	
+<!-- end checkbox -->
+<!-- start menu -->
+<div class="main_menu_forhere">
+	<div class="container">
+		<div class="forhere_img"></div>
+
+
+			<div class="row">
+		<div class="col">
+			<div class="menu_img"><img src="images/menu/Espresso_1.png" alt=""></div>
+			<div class="menu_title">濃縮Espresso</div>
+			<div class="menu_price">$80</div>
+		</div>
+		<div class="col">
+				<div class="menu_img"><img src="images/menu/Espresso_1.png" alt=""></div>
+				<div class="menu_title">美式Americano</div>
+				<div class="menu_price">$90</div>
+			</div>
+	</div>
+	<div class="row">
+			<div class="col">
+				<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+				<div class="menu_title">卡布奇諾Cappuccino</div>
+				<div class="menu_price">$100</div>
+			</div>
+			<div class="col">
+					<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+					<div class="menu_title">拿鐵Latte</div>
+					<div class="menu_price">$120</div>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col">
+					<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+					<div class="menu_title">摩卡Mocha</div>
+					<div class="menu_price">$100</div>
+				</div>
+				<div class="col">
+						<div class="menu_img"><img src="images/menu/Espresso_1.png" alt=""></div>
+						<div class="menu_title">風味美式Flavored Americano</div>
+						<div class="menu_price">$90</div>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col">
+						<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+						<div class="menu_title">蜂蜜拿鐵Honey Flavored Latte</div>
+						<div class="menu_price">$150</div>
+					</div>
+					<div class="col">
+							<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+							<div class="menu_title">梅酒咖啡Plum Wine Coffee</div>
+							<div class="menu_price">$140</div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col">
+							<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+							<div class="menu_title">葡萄柚咖啡Grapefruit Coffee</div>
+							<div class="menu_price">$160</div>
+						</div>
+						<div class="col">
+								<div class="menu_img"><img src="images/menu/drip_1.png" alt=""></div>
+								<div class="menu_title">手沖咖啡Pour Over Coffee</div>
+								<div class="menu_price">$150</div>
+							</div>
+					</div>
+					<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/drip_1.png" alt=""></div>
+								<div class="menu_title">時間釀 冰滴咖啡Iced Drip Coffee</div>
+								<div class="menu_price">$180</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/tea_3.png" alt=""></div>
+									<div class="menu_title">胭脂醉蜜香紅茶Honey Scented Black Tea</div>
+									<div class="menu_price">$120</div>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/tea_1.png" alt=""></div>
+								<div class="menu_title">胭脂醉蜜香紅茶Honey Scented Black Tea</div>
+								<div class="menu_price">$120</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/tea_1.png" alt=""></div>
+									<div class="menu_title">批鼻香高山烏龍Alpine Oolong Tea</div>
+									<div class="menu_price">$160</div>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/tea_2.png" alt=""></div>
+								<div class="menu_title">自然醒GABA茶Organic GABA Tea</div>
+								<div class="menu_price">$180</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/tea_2.png" alt=""></div>
+									<div class="menu_title">蒸光壽眉白茶Shoumei White Tea</div>
+									<div class="menu_price">$150</div>
+								</div>
+						</div>
+												<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+								<div class="menu_title">可可 Chocolate Milk</div>
+								<div class="menu_price">$120</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/coffee_1.png" alt=""></div>
+									<div class="menu_title">黑糖牛奶Brown Sugar Milk</div>
+									<div class="menu_price">$120</div>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/bread_3.png" alt=""></div>
+								<div class="menu_title">牛肉起司可頌</div>
+								<div class="menu_price">$150</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/bread_4.png" alt=""></div>
+									<div class="menu_title">奶油乳酪貝果Cream Chese Bagel</div>
+									<div class="menu_price">$170</div>
+								</div>
+						</div>
+</div>
+
+
+
+
+</div>
+
+
+
+<!-- start for here -->
+<div class=" main_menu_togo">
+	<div class="container">
+		<div class="forhere_img2"></div>
+			<div class="row">
+		<div class="col">
+			<div class="menu_img"><img src="images/menu/Espresso_1.png" alt=""></div>
+			<div class="menu_title">濃縮Espresso</div>
+			<div class="menu_price">$65</div>
+		</div>
+		<div class="col">
+				<div class="menu_img"><img src="images/menu/Espresso_1.png" alt=""></div>
+				<div class="menu_title">美式Americano</div>
+				<div class="menu_price">$65</div>
+			</div>
+	</div>
+	<div class="row">
+			<div class="col">
+				<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+				<div class="menu_title">卡布奇諾Cappuccino</div>
+				<div class="menu_price">$65</div>
+			</div>
+			<div class="col">
+					<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+					<div class="menu_title">拿鐵Latte</div>
+					<div class="menu_price">$65</div>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col">
+					<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+					<div class="menu_title">摩卡Mocha</div>
+					<div class="menu_price">$65</div>
+				</div>
+				<div class="col">
+						<div class="menu_img"><img src="images/menu/Espresso_1.png" alt=""></div>
+						<div class="menu_title">風味美式Flavored Americano</div>
+						<div class="menu_price">$65</div>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col">
+						<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+						<div class="menu_title">蜂蜜拿鐵Honey Flavored Latte</div>
+						<div class="menu_price">$65</div>
+					</div>
+					<div class="col">
+							<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+							<div class="menu_title">梅酒咖啡Plum Wine Coffee</div>
+							<div class="menu_price">$65</div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col">
+							<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+							<div class="menu_title">葡萄柚咖啡Grapefruit Coffee</div>
+							<div class="menu_price">$65</div>
+						</div>
+						<div class="col">
+								<div class="menu_img"><img src="images/menu/drip_1.png" alt=""></div>
+								<div class="menu_title">手沖咖啡Pour Over Coffee</div>
+								<div class="menu_price">$65</div>
+							</div>
+					</div>
+					<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/drip_1.png" alt=""></div>
+								<div class="menu_title">時間釀 冰滴咖啡Iced Drip Coffee</div>
+								<div class="menu_price">$65</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/tea_3.png" alt=""></div>
+									<div class="menu_title">胭脂醉蜜香紅茶Honey Scented Black Tea</div>
+									<div class="menu_price">$65</div>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/tea_2.png" alt=""></div>
+								<div class="menu_title">胭脂醉蜜香紅茶Honey Scented Black Tea</div>
+								<div class="menu_price">$65</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/tea_1.png" alt=""></div>
+									<div class="menu_title">批鼻香高山烏龍Alpine Oolong Tea</div>
+									<div class="menu_price">$65</div>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/tea_2.png" alt=""></div>
+								<div class="menu_title">自然醒GABA茶Organic GABA Tea</div>
+								<div class="menu_price">$65</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/tea_1.png" alt=""></div>
+									<div class="menu_title">蒸光壽眉白茶Shoumei White Tea</div>
+									<div class="menu_price">$65</div>
+								</div>
+						</div>
+												<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+								<div class="menu_title">可可 Chocolate Milk</div>
+								<div class="menu_price">$65</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/coffee_2.png" alt=""></div>
+									<div class="menu_title">黑糖牛奶Brown Sugar Milk</div>
+									<div class="menu_price">$65</div>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="menu_img"><img src="images/menu/bread_1.png" alt=""></div>
+								<div class="menu_title">火腿起司可頌可可 Ham&Cheese Croissant</div>
+								<div class="menu_price">$95</div>
+							</div>
+							<div class="col">
+									<div class="menu_img"><img src="images/menu/bread_2.png" alt=""></div>
+									<div class="menu_title">火腿起司可頌三明治 Ham&Cheese Sandwich</div>
+									<div class="menu_price">$95</div>
+								</div>
+						</div>
+
+</div>
+
+
+
+
+</div>
+<!-- end forhere -->
+<!-- end menu -->
+
+		
+</main>
+<footer>
+		<div class="footer">
+			
+			<div class="container">
+				
+				<div class="footer_logo">
+					<a href=""><img src="images/2121logo.png" alt=""></a>
+				</div>
+				<div class="footer_menu">
+			         <div>				
+				         <ul class="menu1">
+								<li><a class="solid" href="">About</a></li>
+								<li><a  class="solid" href="">Service</a></li>
+								<li><a class="solid" href="">Shop</a></li>
+								<li><a class="solid" href="">Contact</a></li></ul>
+					</div>
+					<div class="menu2">
+						<ul class="menu2">
+								<li><a class="solid" href="">FAQ</a></li>
+								<li><a class="solid" href="">Order</a></li>
+								<li><a class="solid" href="">Our Work</a></li>
+								<li><a class="solid" href="">Join Us</a></li></ul>
+					</div>
+					<div class="menu3">	
+						<ul class="menu3">
+								<li class="solid">Email</li>
+								<li>abc@123.gmail</li>
+								<li class="solid">Tel</li>
+								<li>02-25450020</li>
+								<li class="solid">Address</li>
+								<li>100 Universal City Plaza, Universal City, CA</li>
+							</ul>
+					</div>
+					<div class="menu4">	
+						<ul class="menu3">
+								<li><a href="https://www.facebook.com/insingerkaffee/"><i class="fab fa-facebook-square"></i></a>	</li>
+							</ul>
+					</div>
+					<div class="menu5">	
+						<ul class="menu3">
+								<li><a href="https://www.instagram.com/insingerkaffee/"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+					</div>
+					<div class="menu6">	
+						<ul class="menu3">
+							<li><a href="https://itunes.apple.com/tw/app/id1080251300"><i class="fab fa-line"></i></a></li>
+							</ul>
+					</div>
+
+
+				
+			</div>
+			
+         </div>
+		        
+		
+</footer> 
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/main.js"></script>
+
+
+<script>
+		function setUp() {
+			 $("#header_slider").css("transform", "translateX(0)");
+			
+			// document.getElementById("header_slider").style.transform = "translateX(0)";
+			
+		}
+		function setDown() {
+			$("#header_slider").css("transform", "translateX(300px)");
+			
+		}
+		
+		setUp();
+		setDown();
+
+		
+		
+</script>
+<script>
+$(".look_box").hover(function(){
+	// console.log("event");
+});
+
+
+</script>
+ <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+</script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script>
+	$(window).stellar();
+</script>
+<script>
+	$(".forhere_icon").click(function() {
+		console.log('hi');
+		$(this).css('border-bottom', '3px solid #333333');
+		$(".togo_icon").css('border-bottom', 'none');
+		// $(".togo_icon").removeClass('main_menu_current');
+		$(".main_menu_forhere").css('display' , 'block');
+		$(".main_menu_togo").css('display' , 'none');
+
+	});
+		$(".togo_icon").click(function() {
+		console.log('oh!');
+		$(this).css('border-bottom', '3px solid #333333');
+		$(".forhere_icon").css('border-bottom', 'none');
+		$(".main_menu_togo").css('display' , 'block');
+		$(".main_menu_forhere").css('display' , 'none');
+	});
+</script>
+</body>
+</html>b

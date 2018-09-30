@@ -1,0 +1,551 @@
+
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+/*main*/
+.maintext{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.maintext a{
+	display: block;
+	text-decoration: none;}
+.maintext h2{
+	display: block;
+	color: white;
+	text-align: center;
+	font-family: 'Amatic SC', 'cwTeXFangSong', serif;
+	line-height: 36px;
+	font-weight: 300;
+}
+.maintext h4{
+	color: white;
+	display: block;
+	border: 3px solid #fff;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-size: 1.5em;
+	text-decoration: none;
+	line-height: 2em;
+}
+.good_bg{
+	/*margin-top: 72px;*/
+	width: 100%;
+	height: 400px;
+
+	background: url("../images/bar-cafe-caffeine-1002740.jpg") 0 0 no-repeat;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	background-position: center;
+
+
+	
+   }
+
+   .good_bg img{
+	width: 100%;	
+	height: 100%;	
+   }
+@media (max-width: 320px){
+	.good_bg{
+
+		height: 400px;
+		width: 100%;
+
+	}
+	.maintext{
+		width: 80%;
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	}
+	.maintext h2{
+	padding-top: 70px;
+	display: block;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	font-weight: 300;
+	font-family: 'Amatic SC', 'cwTeXFangSong', serif;
+}
+
+.maintext h4{
+	color: white;
+	display: block;
+	border: 3px solid #fff;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-size: 1em;
+	text-decoration: none;
+	line-height: 2em;
+}
+
+}
+
+
+.good_bg:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+}
+
+
+
+@media (min-width: 321px) and (max-width: 769px){
+	.maintext{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 100%;	
+}
+.maintext a{
+	display: block;
+	text-decoration: none;}
+.maintext h2{
+	display: block;
+	color: white;
+	text-align: center;
+	font-family: 'Amatic SC', 'cwTeXFangSong', serif;
+	line-height: 1.5em;
+	font-size: 1.3em;
+}
+.maintext h4{
+	color: white;
+	display: block;
+	border: 3px solid #fff;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-size: 1.5em;
+	text-decoration: none;
+	line-height: 2em;
+}
+.good_bg{
+	
+	width: 100%;
+	height: 400px;
+
+	background: url("../images/202505.jpg") 0 0 no-repeat;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	background-position: center;
+
+	
+   }
+
+
+}
+/* navbar */
+
+nav{
+	background-color:#333333;
+
+
+	
+}
+nav .container{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbar_menu{
+	padding: 8px 0;
+	justify-content:end;
+	flex-direction: row;
+
+}
+.navbar_menu ul{
+	display: flex;
+	/* padding: 8px 0; */
+	flex-direction: row;
+}
+.navbar_menu ul li{
+	/* padding: 8px 0; */
+	list-style: none;
+	/* margin-right: 24px; */
+	padding: 0 4px;
+	justify-content:end;
+}
+.navbar_menu ul li a{
+	justify-content:end;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	/*margin-top: -8px;*/
+	font-family: '微軟正黑體';
+	 display: block;
+	 cursor: pointer;
+	 transition: 0.3s;
+}
+
+.navbar_menu_hover{
+	opacity: 0.6;
+}
+.navebar_icon{
+	display: flex;
+	flex-direction: row;
+	margin-left: 16px;
+}
+.navebar_icon a{
+	display: block;
+	justify-content:end;
+	color: white;
+	font-size: 24px;
+	letter-spacing: 12px;
+	
+}
+
+
+.navbar_menu .dropdown{
+	display: flex;
+	position: absolute;
+	left: 50%;
+	top: 105%;
+	transform: translateX(-50%);
+	background-color: #3a3a3a;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar_menu > li:hover .dropdown{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+	flex-direction: column;
+	z-index: 10;
+
+}
+.navbar_menu .dropdown > li > a{
+	display: block;
+	text-align: center;
+	line-height: 24px;
+	padding: 8px 24px;
+	color: #fff;
+	width: 200px;
+	transition: all 0.2s;
+	font-size: 1em;
+}
+.navbar_menu .dropdown > li > a:hover{
+	background-color: #ffffff;
+	color: black;
+}
+
+
+@media (max-width: 320px){
+	nav{
+		display: none;
+		visibility: hidden;
+	}
+
+}
+/*filter form*/
+
+.filter-form {
+    float: right;
+    padding: 16px 0;
+    margin-right: 8px;
+}
+.filter-form label {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin:0 12px 0 4px;
+    padding: 0 0.25em;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+        color: white;
+}
+
+/* filter */
+.filter .container{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding:0 36px;
+}
+
+.filter_box{
+	display: flex;
+    align-items: center;
+	flex-direction: row;
+}
+.fa-list-ul, .fa-th-large{
+	font-size: 24px;
+	margin-left: 8px;
+	color: black;
+	
+}
+.fa-list-ul{
+	margin-left: 16px;
+}
+
+.filter form{
+	margin-left: 8px;
+	font-size: 14px;
+}
+
+
+@media (max-width: 320px){
+	.fa-list-ul, .fa-th-large{
+		
+		visibility: hidden;
+	}
+	.filter > .container{
+		display: flex;
+		flex-direction: column;		
+		
+	}
+	.total{
+			display: flex;
+			flex-shrink:2;
+			justify-content:flex-start;
+		
+	}
+	.total p{
+		font-size: 16px;
+		justify-content:flex-start;
+		
+	}
+	.filter_box{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 14px;
+
+
+	
+	}
+	.filter_box p, .filter_box form{
+		justify-content: space-between;
+		font-size: 14px;
+		display: block;
+		text-align: center;
+		/*padding: 0 12px;*/
+	}
+
+}
+
+input[type=checkbox]:not(old){
+	width   : 28px;
+	margin  : 0;
+	padding : 0;
+	opacity : 0;
+  }
+  input[type=checkbox]:not(old) + label{
+	display      : inline-block;
+	margin-left  : -28px;
+	padding-left : 28px;
+	line-height  : 24px;
+	background   : url('../images/checks.png') no-repeat 0 -48px;
+  }
+  
+  input[type=checkbox]:not(old):checked + label{
+	background-position : 0 -73px;
+  }
+/* goods */
+.goods{
+	background-color: #fff;
+	padding: 20px 0 48px 0;
+	
+}
+.goods .container{
+	/* width: 1200px; */
+	margin: 0 auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: flex-start;
+	align-content: center;
+	
+
+}
+
+
+
+.box{
+	width: 250px;
+	height: 300px;
+	/* border: 1px solid gray; */
+	margin: 8px 16px;
+	overflow: hidden;
+	/* box-shadow: 0 2px 2px rgba(0,0,0,0.5); */
+	text-overflow : ellipsis;
+	text-align: center;
+}
+.box.displaynone{
+	display: none;
+
+}
+
+.box_img{
+	width: 95%;
+	height: 70%;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	top: 5px;
+	object-fit:cover;
+	/* position: absolute; */
+}
+.box_img img{
+	width: 100%;
+	height: 100%;
+	transition: 0.2s;
+}
+
+.box_img:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+	/* opacity: 0; */
+	visibility: hidden;
+
+}
+.box_img:hover  .box_img:after{
+	visibility: visible;
+	/* opacity: 1; */
+}
+
+.box_text{
+	padding: 0 12px 8px 12px;
+	line-height: 1em;
+	
+	
+
+}
+.box_text h5{
+	font-size: 1.2em;
+
+	margin: 16px 0 24px 0;
+	/* font-weight: 700; */
+color: #333333;
+font-family:'cwTeXFangSong', serif;
+-webkit-font-smoothing: antialiased;
+	font-weight: 900;
+
+}
+.box_text p{
+	color: #333333;
+	font-family:arial;
+	font-size: 1.4em;
+	line-height:0;
+	letter-spacing: 2px;
+	font-family: 'Amatic SC', cursive, 'cwTeXFangSong', serif;
+
+	letter-spacing: 3px;
+	font-weight: 700;
+	 
+}
+@media (max-width: 320px){
+	.goods .container{
+
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	align-content: center;
+
+		}
+	.box{
+		width: 220px;
+		height: 250px;
+		/*border: 1px solid gray;*/
+		/*margin: 8px 16px;*/
+		overflow: hidden;
+		/*box-shadow: 0 2px 2px rgba(0,0,0,0.5);*/
+
+				
+	}
+	.box_text{
+	padding: 0 10px 6px 10px;
+	line-height: 0.5em;
+	
+	
+
+}
+.box_text h5{
+	font-size: 1.2em;
+	font-weight: 900;
+margin-top: 25px;
+margin-bottom: 15px;
+
+}
+.box_text p{
+	
+	
+	font-size: 1.2em;
+	line-height:0;
+	letter-spacing: 3px;
+
+
+	 
+}
+}
+@media (min-width: 321px) and (max-width: 769px){
+	.goods .container{
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	flex: 4;
+
+}
+	.box{
+		width: 200px;
+		height: 250px;
+		/*border: 1px solid gray;*/
+		/*margin: 8px 16px;*/
+		overflow: hidden;
+		/*box-shadow: 0 2px 2px rgba(0,0,0,0.5);*/
+		
+	}
+	.box_text{
+	padding: 0 10px 6px 10px;
+	line-height: 1em;
+	
+	
+
+}
+.box_text h5{
+	font-size: 1.2em;
+	font-weight: 900;
+margin-top: 15px;
+margin-bottom: 15px;
+letter-spacing: 1px;
+
+}
+.box_text p{
+
+	
+	font-size: 1.1em;
+	line-height:0;
+	letter-spacing: 2px;
+
+	letter-spacing: 2px;
+	font-weight: 700;
+	 
+}
+
+
+}
+.box_hide{
+	display: none;
+}
+
+
