@@ -201,12 +201,13 @@ $(document).ready(function(){
     //Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
+            // console.log("low")
             // $('#header').css("opacity", "0.8");
             $('#header').css("background", "#333333");
-         
-
 
         } else {
+            // console.log("high")
+            
            $('#header').css("background", "transparent");
            
            
@@ -272,7 +273,11 @@ $("#toggle").click(function(){
     event.stopPropagation();
   $("#header_slider_menu").toggleClass('show');
    $("#header").toggleClass('bg-gray');
-
+    if($("#header_slider_menu").hasClass("show")){
+        $('#header').css("background", "#333333");
+    }else{
+        $('#header').css("background", "transparent");
+    }
 
 
 });

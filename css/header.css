@@ -347,6 +347,6 @@ background-color: black;
 
 .bg-gray{
 	background: #333333;
-	z-index: 10;
+	z-index: 10 !important;
 }
 
